@@ -28,7 +28,6 @@ function instaScraper(element, username, thumbnails) {
             if (data.query.results != null) {
                 var queryData = data.query.results.html.body.script["0"].content.replace('window._sharedData = ', '').replace(';', '');
                 queryData = $.parseJSON(queryData);
-                // console.log(queryData);
                 var item = queryData.entry_data.ProfilePage["0"].user.media.nodes;
                 for (var i = 0; i < item.length; i++) {
                     var imgURL = item[i][thumb];
@@ -47,4 +46,3 @@ function instaScraper(element, username, thumbnails) {
             }
         })
 }
-instaScraper('.row', 'corgis_of_instagram');
