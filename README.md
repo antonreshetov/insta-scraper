@@ -1,13 +1,22 @@
-# Instagram scraper based on YQL
+# Instagram scraper based on allorigins.me
 
-Instagram scraper based on [Yahoo Query Language](https://developer.yahoo.com/yql/).
+> Previously, the script was based on YQL, but Yahoo stopped supporting the HTML library.
 
-YQL make cross-domain AJAX requests with jQuery.
+Now instagram scraper based on [allorigins.me](http://allorigins.me/).
+
+Allorigins make cross-domain AJAX requests.
 
 ## Usage
 
 ```javascript
-instaScraper(element, username[, thumbnails]);
+/**
+ * @param {string} username - instagram username
+ * @param {string} thumbnails - thumbnails (thumbnail_src, display_src)
+ * @returns {Promise} - array of images
+ */
+instaScraper( username[, thumbnails])
 ```
+
 ## License
-MIT © 2017 [Anton Reshetov](http://web.antonreshetov.com)
+
+MIT © 2017-present [Anton Reshetov](http://antonreshetov.com)
