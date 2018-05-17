@@ -1,4 +1,4 @@
-# Instagram scraper based on allorigins.me
+# Promise-based javascript instagram scraper on client
 
 > Previously, the script was based on YQL, but Yahoo stopped supporting the HTML library.
 
